@@ -4,8 +4,22 @@
 <h1>RabbitMQ Toy</h1>
 </div>
 
-### How to run RabbitMQ with docker? Try It
+## How to run
+
+### Docker run
 
 ```bash
 docker run -d -p 15672:15672 -p 5672:5672 --hostname my-rabbit --name some-rabbit rabbitmq:3-management
 ```
+
+### Ports
+
+- GUI interface port on: **15672**
+- AMQP protocol port on: **5672**
+
+### Default Auth
+
+| Protocol | Port  | Login | Passowrd |
+| -------- | ----- | ----- | -------- |
+| HTTP     | 15672 | guest | guest    |
+| AMQP     | 5672  | -     | -        |
